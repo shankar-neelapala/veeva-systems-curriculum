@@ -1,0 +1,9 @@
+Test
+what is test issue type in xray
+
+Test
+  •	Test in Xray is a work item used to define the test cases which includes steps, data and expected outcomes
+  •	The image shows that how test cases written (action, data, expected outcome)
+  A core test case, containing steps, actions, and expected results, often linked to requirements. Can be Manual (steps), Generic (unstructured),
+  or Cucumber (Gherkin syntax).
+
