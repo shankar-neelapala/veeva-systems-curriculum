@@ -1,0 +1,16 @@
+Test Plan
+  •	Groups tests and test sets for 	a specific version of a project, defines what to test often including environment setup and planning.
+  •	It is used to organize, schedule, and track testing activities for a release or sprint, acting as a container for test, test executions and test sets
+
+
+
+
+Test Parameters
+  •	Test parameters in Xray allow you to run the same test case with multiple data sets by replacing hardcoded values with placeholders like $username or $password,
+    enabling dynamic data-driven testing
+  •	Run one test case with many different inputs and expected results.
+  •	For creating test parameter, first we need to create a dataset which available in the test issue type, click on dataset and create a dataset based on
+    requirements and use it in test case writing with placeholder like $username
+  •	Executing a parameterized test is similar to executing a test but instead of executing at once, we execute the test in iteration. Each iteration the test
+    executed against one data sample
+
