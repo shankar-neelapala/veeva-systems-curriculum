@@ -15,6 +15,11 @@ Cumulative flow diagram
 
 JQL
   •	Jira Query Language (JQL) is powerful, text-based language used to create complex search queries to find and filter issues within the Jira
+  JQL (Jira Query Language) filters are powerful search queries used in Jira to find specific work items (issues) based on criteria like project,
+  status, assignee, and custom fields, functioning like a search engine to narrow down results for better management, dashboards, and integrations.
+
+  Filters are saved JQL searches, allowing reuse and sharing, and use fields, operators (like =, !=, ~), and values, combined with keywords like AND,
+  OR, and ORDER BY, to create complex, custom views of your Jira data. 
   •	Example: project = ABC AND status = "In Progress"
 
 What is dashboard
