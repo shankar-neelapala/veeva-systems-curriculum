@@ -1,0 +1,10 @@
+Precondition
+  •	It defines prerequisite condition or data needed to run a test case
+  •	Reusable across tests
+  •	For example, to check login credential of a news app, the user must install the app and registered with the app 
+  
+In Xray for Jira, a Precondition is a specific issue type used to define prerequisites that must be met before a test case can run, ensuring reusability
+by allowing them to be created once and linked to multiple tests (e.g., "user is logged in").
+
+Preconditions are independent entities, managed like other Jira issues (with summaries, details, history), and their fulfillment status (To Do, In Progress,
+Completed) can be tracked during execution, promoting test setup consistency. 
