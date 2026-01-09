@@ -1,0 +1,21 @@
+What is xray?
+key features and benifits
+
+Xray Test Management
+  •	Xray for Jira is a comprehensive test management app that allows teams to manage their testing life cycle – planning, design, execution and reporting. 
+  •	It supports both manual and automated testing (like BDD with Cucumber, Jenkins, GitLab), provides custom reports
+•	
+Key features and benefits
+  •	Jira native integration
+  •	Manual and automated testing 
+  •	Full test lifecycle management
+  •	Traceability
+  •	Dashboards and reports
+
+configuration of xray in jira
+  Configuring Xray in Jira involves two main stages : installing the Xray app from the Atlassian Marketplace and then configuring the settings within your specific
+  Jira project
+  Stage 1: Installation (Jira Administrator Required): navigate to apps and find for xray test management and install it for free trail
+  Stage 2: Project Configuration : automatic configuration for company based projects and manula configurations forn team based project management of issues tyeps
+  
+  
