@@ -1,1 +1,39 @@
+Day - 1
+Introduction about jira
+Jira terminologies
 
+Jira by Atlassian
+  •	Jira is a powerful project management and issue-tracking tool used by teams (software, IT, marketing and business) to plan, track and release work,
+  supporting agile methodologies like Scrum and Kanban with features for bug tracking, task management, custom workflows, and reporting, serving as a 
+  central hub to organize projects and improve collaboration. 
+
+Jira Terminologies
+  Core Concepts
+    •	Issue: A fundamental unit of work (work item)
+    •	Project: A collection/container of related issues
+    •	Issue Type: Classification of issues (epic, bug, task, story etc)
+    •	Boards: Visualizing issues (kanban/scrum)
+    •	Workflow: The defined path an issue follows
+  Agile & Scrum Terms
+    •	Epic: A large body of work, broken down into smaller stories
+    •	Story: A user-centric requirement
+    •	Task: A generic piece of work
+    •	Bug: A defect or error
+    •	Sprint: A fixed time period to complete work
+    •	Backlog: The prioritized list of all pending work
+    •	Burndown Chart: Visualizes work remaining vs time in a sprint
+  Views & Tools
+    •	Dashboards: Customizable overview with gadgets (charts, stats)
+    •	JQL: Jira Query Language a powerful search syntax for issues
+    •	Custom field: A user defined field to capture extra data
+    •	Component: A sub-section or feature within a project
+  Statuses & States
+    •	To Do/Open: Ready to start
+    •	In Progress/Work in Progress: Actively being worked on
+    •	In Review/Under Review: Awaiting peer check
+    •	Done/Closed/Resolved: Work completed
+    •	Cancelled/Won’t Do: Work stopped
+  Jira Products
+    •	Jira Software (JSW): For Development Teams (Scrum/Kanban)
+    •	Jira Service Management (JSM): For IT/Customer support
+    •	Jira Work Management (JWM): For Business Teams
