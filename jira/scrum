@@ -1,0 +1,35 @@
+What is Agile?
+What is scrum?
+Sprint planning, execution and completion?
+Story points
+
+What is Scrum in agile
+  •	Scrum is an iterative Agile framework where work is delivered in fixed-length iterations called sprints
+  •	Key Scrum Elements in Jira
+    o	Product Backlog → List of all work items (stories, bugs, tasks)
+    o	Sprint Backlog → Items selected for the current sprint
+    o	Sprint Board → Visual board to track work status
+  •	Sprint Planning in Jira
+    o	Product Owner prioritizes backlog
+    o	Team selects issues for the sprint
+    o	Team estimates effort (story points or time)
+    o	Sprint goal is defined
+  •	Sprint Execution
+    o	Developers move issues across statuses
+    o	Jira updates progress automatically
+    o	Burndown chart shows remaining work
+  •	Sprint Completion
+    o	Sprint Review → Demonstrate completed work
+    o	Sprint Retrospective → Discuss improvements
+    o	Sprint is closed in Jira
+    
+•	Story Points (Preferred in Scrum)
+  o	Measure relative effort, not time
+  o	Based on:
+  o	Complexity
+  o	Risk
+  o	Uncertainty
+  o	Uses Fibonacci scale: 1, 2, 3, 5, 8, 13
+•	Example: login page – 2 points, payment integration – 8 points
+
+
