@@ -1,0 +1,14 @@
+Test Execution
+  •	Manages the running of tests, creating instances (Test Runs) and tracking results (Pass/Fail/Blocked).
+  •	For each step or iteration, logging defects if needed, and tracking progress via status updates and reports.
+  •	Each run creates a "Test Run" capturing results within the Test Execution's context for a specific environment and version.
+
+
+In Xray for Jira, the Test Execution is a specific Jira issue type used to group Tests for a particular run, track their progress (pass/fail/blocked), 
+and manage the overall testing cycle within an environment, functioning like a test cycle or iteration to oversee execution of selected Test Cases or Test Sets
+
+Key Characteristics of a Test Execution:
+  Aggregates Tests: It brings together a collection of Test issues (or Test Sets) you want to execute together for a specific purpose (e.g., Sprint 1, Regression Cycle).
+  Tracks Progress: Provides an overall status (Passed, Failed, Blocked, etc.) as individual tests within it are run.
+  Manages Execution: Allows you to assign tests to specific testers and track results within a target environment.
+  Generates Test Runs: Each time a Test is executed from a Test Execution, a unique "Test Run" is created, maintaining execution history. 
