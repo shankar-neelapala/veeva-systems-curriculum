@@ -1,0 +1,18 @@
+Test Set
+
+In Xray for Jira, a Test Set is a specific Jira issue type used to group multiple Test Cases (also Xray issue types) into a logical suite, enabling collective
+execution, organization by sprint/feature, and easier management, functioning like a folder or tag for tests, unlike the hierarchical Test Repository.
+
+Key Characteristics & Purpose
+  Grouping: Gathers multiple tests (Test Cases) for a common purpose (e.g., regression, sprint-specific tests).
+  Execution: Allows running many tests at once, streamlining execution cycles.
+  Organization: Helps structure tests by criteria like sprints, releases, or functionalities, separate from the Test Repository's tree structure.
+  Flexibility: A single Test Case can belong to multiple Test Sets, and Test Sets can span projects.
+  Traceability: Can link to User Stories or Epics, leveraging Jira's core features. 
+
+How to Create a Test Set
+  Click the Create button in Jira.
+  Select the Project.
+  Choose Test Set as the Issue Type.
+  Provide a Summary and fill other relevant fields.
+  Click Create. 
