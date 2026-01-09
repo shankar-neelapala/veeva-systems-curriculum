@@ -1,1 +1,23 @@
+Day - 2
+What is work item, space and boards in jira
+Types of work items or issues types
+
+What’s a work item
+  •	Individual pieces of work are work items
+  •	Work items can vary in size depending on how your team uses them. Some work items take months to complete. Others finish in a few hours
+What’s a space
+  •	A space is a collection of related work items. In Jira, every work item belongs to a space
+  •	Teams can use spaces differently depending on how they want to categorize and organize work
+  •	Space keys are short versions of the space name that identify the work items in that space
+
+What’s a board
+  •	A board is a visualization of the work in a space. Boards have columns with work items in them
+  •	The columns represent the statuses that your work, represented by work items
+  •	Your entire board represents your team’s workflow, the path of statuses an work items moves through
+Types of work
+  •	Epic: An epic represents a large body of work that can break down into smaller chunks. Known as “parent” work items, epics contain smaller work items within them.
+  •	Story: A story is a deliverable from the user's perspective. They define work items in non-technical language.
+  •	Task: A task contains a detailed description of a work item, usually from your perspective.
+  •	Bug: A bug is a defect or error
+  •	Subtask: A subtask is the smallest piece of work.
 
