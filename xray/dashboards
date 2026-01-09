@@ -1,0 +1,13 @@
+Dashboards and reports
+  •	Dashboards and reports in Xray (for Jira) provide visual insights into testing progress, coverage, and quality using customizable gadgets on Jira dashboards
+  •	Dashboard is a customizable view using gadgets to visualize testing progress, requirements coverage, and test execution status, helping teams monitor quality,
+    identify blockers, and report to stakeholders.
+
+
+Key Features & Benefits:
+  Visual Dashboards: Create customizable dashboards in Jira with Xray gadgets to display test progress, quality, and bottlenecks.
+  Test Coverage: Visualize coverage linking tests to requirements to see what's covered and what's missing.
+  Execution Tracking: Monitor pass/fail rates, execution trends, and overall test status over time.
+  Defect Analysis: Identify defects, see linked issues, and understand defect trends.
+  Traceability: Link tests to requirements for comprehensive traceability.
+  Customization: Use Xray gadgets and Jira's built-in options for tailored views. 
