@@ -1,0 +1,24 @@
+What is kanban?
+Kanban principles
+managing the flow and visualizing the work flow
+
+What is kanban 
+  •	Kanban is a continuous delivery system with no sprints
+  •	Key principles
+    o	Work in progress (WIP) limit
+    o	Visualize work
+    o	Manage work
+    o	Improve continuously
+  •	Managing Flow
+    o	Work is pulled, not assigned
+    o	Focus on finishing work before starting new items
+    o	Measure cycle time and throughput
+  •	Visualize work with limits
+    o	WIP limit
+    o	It restricts number of work items in a column
+    o	Prevents overloading and multitasking
+    o	Example if WIP limit = 3
+    o	Then team should not begin new task 4 until one is finished
+
+
+
