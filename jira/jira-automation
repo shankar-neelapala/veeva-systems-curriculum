@@ -1,0 +1,23 @@
+Jira Automation
+  •	Jira Automation is a built-in, no-code feature in Jira Cloud that lets users create "if-this-then-that" rules to automate repetitive tasks and
+  streamline workflows, reducing manual effort and errors by using triggers (events), conditions (filters), and actions (tasks)
+  •	These rules can be simple (like auto-assigning issues) or complex (like cross-project updates)
+
+
+  •	Triggers
+    o	The event that starts the rule (e.g., Issue Created, Field Value Changed, Due Date Passed).
+
+
+  •	Conditions
+    o	Filters that define when the rule should run (e.g., only for specific projects, issue types, or assignees).
+
+
+  •	Actions
+    o	The task Jira performs (e.g., Assign Issue, Send Slack Message, Transition Status, Add Comment, Create Sub-task)
+
+
+Common Use Cases
+  Auto-assigning issues to users with the least workload.
+  Moving issues to a "Done" column when all sub-tasks are complete.
+  Notifying Slack or specific users when a release is shipped.
+  Automatically adding labels or components to issues. 
