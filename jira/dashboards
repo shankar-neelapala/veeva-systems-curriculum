@@ -1,0 +1,43 @@
+What is CFD
+Dahsboards in jira
+
+Swimlanes in Jira
+  •	Used to group issues visually on boards
+  •	By assignee
+  •	By work type
+  •	By status
+Cumulative flow diagram 
+  •	A chart that shows how work items are moved across states over time
+  •	What is displays
+      o	X – axis: time
+      o	Y- axis: number of issues
+      o	Coloured bands: workflow states
+
+JQL
+  •	Jira Query Language (JQL) is powerful, text-based language used to create complex search queries to find and filter issues within the Jira
+  •	Example: project = ABC AND status = "In Progress"
+
+What is dashboard
+  •	A Jira Dashboard is a single screen that shows important project information using gadgets (small widgets).
+  •	Personal Dashboard
+    o	Used by individual users to track their own work.
+    o	Example: Developer’s Personal Dashboard
+    o	Issues assigned to me
+    o	Bugs I need to fix today
+    o	Tasks due this week
+    o	My sprint progress
+  •	Team Dashboard
+    o	Used by entire teams (Scrum team, QA team, Managers).
+    o	Example: Scrum Team Dashboard
+    o	Sprint progress
+    o	Remaining work
+    o	Blocked issues
+    o	Team velocity
+  •	Everyone sees the same result and reduce daily status meetings
+  •	What is a Gadget?
+    o	A gadget displays specific data like issue lists, charts, or progress.
+  •	Example: filter result gadget, pie chart gadget etc
+  •	Burndown chart
+    o	It shows remaining work vs time in a sprint
+
+
