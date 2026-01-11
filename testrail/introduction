@@ -1,0 +1,39 @@
+About TestRail test cases management tool
+Features
+
+
+TestRail is a test case management tool used in software testing to plan, organize, execute, and track testing activities. It helps QA teams manage manual and 
+automated tests, monitor progress, and report quality status clearly to stakeholders.
+
+1. What is TestRail?
+
+  TestRail is a web-based test management system that allows teams to:
+  
+  Store and organize test cases
+  
+  Create test plans and test runs
+  
+  Execute tests and record results
+  
+  Track defects by integrating with bug-tracking tools
+  
+  Generate reports and metrics
+
+Features of TestRaill
+  1. Test Case Management
+    Create, edit, and organize test cases
+    Group test cases into sections (Login, Checkout, Payments, etc.)
+    Reuse test cases across projects
+
+  2. Test Plans: It defines like how it will be started, what will be tested and which configurations are used
+  3. Test Runs: A test run is where the testsers actually executes the test cases
+  4. Defect Tracking Integration: it integrate defects with tools like Jira, Bugzilla, Github Issues etc.
+  5. Reporting and metrics
+
+  6. User roles and admins
+    It defines access levels and secutiry based on the role like admin, test manager, tester and viewer
+
+
+
+Typically testrail workflow follows like:
+create project -> create milestone, sections and subsections -> create test cases -> create test runs -> create test plans -> execute tests -> log defects -> show reports and metrics
