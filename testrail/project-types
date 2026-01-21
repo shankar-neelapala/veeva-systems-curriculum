@@ -1,0 +1,31 @@
+Projects 
+  Projects are the main organizational unit in TestRail. The type of project you use will define how you organize and manage your test cases within that project
+
+Types of projects in testrail
+
+1. Single repository projects
+  A single test suite (repository) is easy to manage and flexible enough for most projects with few concurrent versions.
+  You will have a single area in which all of your test cases for that project are stored and you can use sections and subsections to organize your test cases
+  You will have a single area in which all of your test cases for that project are stored and you can use sections and subsections to organize your test cases
+
+2. Single repository with baseline support projects
+  A single test suite (repository) gives you the additional option to create baselines to manage multiple branches of your test cases at the same time
+
+3. Multiple Test Suites
+  Projects with multiple test suites can be used to organize your test cases by functional areas and application modules on the test suite level.
+  Each test suite can be organized into its own sections and subsections, like in a single repository-type project.
+
+1. Single Repository
+  Best For: Most projects needing simplicity and flexibility.
+  How it Works: All test cases reside in one test suite, organized by sections and subsections.
+  Benefit: Easy management and facilitates end-to-end testing within a single run. 
+
+2. Single Repository with Baseline Support
+  Best For: Managing multiple product versions or concurrent testing.
+  How it Works: Starts with a master suite, then creates baselines (copies) for different versions, allowing parallel testing.
+  Benefit: Version control for tests across different releases. 
+
+3. Multiple Test Suites
+  Best For: Large, functionally distinct test suites (e.g., Functional, Regression, Automation).
+  How it Works: Divides tests into separate, distinct suites within the same project.
+  Limitation: Test runs can only select cases from a single suite, not across multiple suites at once. 
