@@ -1,0 +1,54 @@
+Key terms in TestRail
+
+1. Test Case
+  Test cases are building blocks in testrail.
+  A test case is consists of
+  - Summary of the test case that means what you need to test
+  - Descripton about how to run your tests which includes prerequisites, stpes, data and the result
+  - Additional info. like priority, type, linked or reference 
+
+2. Sectios and Subsections  
+  Sectiona and Subscetions are like folders allowing you to organize the test cases in a heirarchial structure(tree)
+  - Multiple test cases related to the login page are grouped together
+
+3. Test Suite
+  Test Suite is only find when we use mutliple test suites project type
+  It gives you a additional layer of separation between the groups of test cases
+  Each test suite is independent and not related to other suites within the project
+
+4. Tests
+  - When a test case is selected to be part of a test
+    run, TestRail creates a test with a unique ID for
+    that specific test run.
+  - A Test (within a Test Run) is an instance of executing a Test Case (or multiple) to track actual results (pass/fail/blocked)
+    against a specific build or configuration
+
+5. Test Run
+  A test run consists of tests for each test case that you add and it represents what you actually plan to test under a specific release, sprint or milestone
+
+6. Results
+  After executing the tests, the tester compares the executed outcome with the actual outcome and record their finding as the testing results
+
+7. Test Plan
+  When you need manage multiple test runs for a single release or milestione a test plan comes in handy
+  Test plans allow you to create multiple test runs at once and group them for easier tracking. You can generate test runs for various configurations automatically
+
+
+
+
+Project: The top-level container in TestRail for all testing activities related to a specific application or product.
+
+Test Planning & Execution
+  Test Run: A set of test cases selected from the repository to be executed within a specific cycle (e.g., a sprint or release).
+  Test Plan: A higher-level container for managing multiple test runs, allowing for complex, parallel, or phased testing.
+  Milestone: A way to organize test runs and plans around specific project goals, releases, or deadlines.
+  FastTrack: A feature for quickly reviewing and updating the status of multiple tests in a run. 
+Results & Statuses
+  Test Status: The outcome of a test, usually: Passed, Failed, Blocked (cannot be tested due to bugs), or Retest.
+  Untested: The default status for new tests that have not yet been executed.
+  Add Result: The action of logging the outcome, comments, and defects for a test case. 
+Integration & Reporting
+  References (Refs): IDs used to link test cases to external requirements or user stories in tools like Jira.
+  Defect: A bug linked to a failed test result, usually tracked in external systems.
+  Reports: Built-in analytics for tracking test progress, coverage, and team productivity.
+  TestRail API: A programming interface used to integrate automated tests and external tools with TestRail. 
