@@ -1,0 +1,14 @@
+Test results and Test Statuses
+What are test results?
+  Test results are the outcome of your testing cycle. In TestRail, each test result can include updates to test statuses and other test fields, comments, and attachments.
+  Test statuses
+  Comparing the test results with the expected results allows the tester to assign statuses to the tests.
+  By default, each test has one of five different statuses that are signaled in TestRail by specific colors. 
+
+•	Untested: By default, new tests have the status Untested. Once a test result has been added to a test, it can never receive the Untested status again.
+•	Passed: A test is marked as Passed when a tester verified the test steps and their testing demonstrates that the functionality of the application matches the expected results.
+•	Failed: A tester marks a test as Failed if one of the specified test steps resulted in an error or if the expected result differs from the actual test result.
+•	Retest: If a developer or tester determines that a test should be tested again, they can mark the test as Retest (e.g., if a test originally failed and the developer fixed the problem, the developer can mark it to be retested).
+•	Blocked: The Blocked status is used to signal that a test cannot be executed currently because of some external dependency (such as a bug that needs to be fixed before being able to complete the test). It is often used in combination with the Retest status.
+
+
