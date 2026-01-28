@@ -1,0 +1,13 @@
+Page
+A page is a dynamic digital documentation within the confluence where teams create, share and collaborate on content like project plans, meeting notes, sharing ideas,
+acts as a centralized knowledge base rich in text edit, fonts, styles etc
+
+Key aspects of a Confluence page:
+  1. Content Hub: It's where your information lives, from meeting minutes to product requirements.
+  2. Flexible Formatting: Supports text, images, tables, code, and embeds from other tools.
+  3. Templates: Offers pre-built templates (e.g., meeting notes, project plans) to speed up creation.
+  4. Macros: Special features (macros) add dynamic content like action items, status indicators, or whiteboards.
+  5. Collaboration: Enables comments, reactions, and version history for easy teamwork and tracking changes.
+  6. Hierarchy: Pages are organized under "spaces" (e.g., by team or project) and can have parent/child relationships.
+
+  
