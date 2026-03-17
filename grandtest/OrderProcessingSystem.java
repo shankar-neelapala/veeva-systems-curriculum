@@ -1,64 +1,168 @@
 import java.time.LocalDate;
 import java.util.*;
 class OrderProcessingSystem{
-    public static void main(String args[]){
-        Item item1 = new Item("Brush", 15, 10, 2);
-        Item item2 = new Item("Colgate", 20, 15, 5);
-        Item item3 = new Item("Oreo", 5, 5, 2);
-        Customer cust1 = new Customer("Abdul", "Tanuku", "1234567890","abdul@gmail.com");
-        Customer cust2 = new Customer("Maxwell", "Tadepalligudem", "987654321", "maxwell@gmail.com");
-        OrderService orderService = new OrderService();
-        orderService.addItem(item1);
-        orderService.addItem(item2);
-        orderService.addItem(item3);
-        orderService.addCustomer(cust1);
-        orderService.addCustomer(cust2);
+    public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    OrderService orderService = new OrderService();
 
-        System.out.println("Item Name: "+orderService.getItemByname("Brush").getName());
-        List<Item> itemRes = orderService.getItemsByPrice(20);
-        if(itemRes.size() > 0){
-            for(Item item : itemRes){
-            System.out.println("Item Name: "+item.getName());
-            }
-        }
-        else{
-            System.out.println("No items found");
-        }
+    while (true) {
+        System.out.println("\n===== Order Processing Menu =====");
+        System.out.println("1. Add Item");
+        System.out.println("2. Add Customer");
+        System.out.println("3. Get Item By Name");
+        System.out.println("4. Get Items By Price");
+        System.out.println("5. Place Order");
+        System.out.println("6. Get Order By Id");
+        System.out.println("7. Get Orders By Customer");
+        System.out.println("8. Highest Order Transaction");
+        System.out.println("9. Lowest Order Transaction");
+        System.out.println("10. Orders From Last Week");
+        System.out.println("0. Exit");
+        System.out.print("Enter choice: ");
 
-        List<OrderItem> orderItems = new ArrayList<>();
-        OrderItem orderItem1 = new OrderItem(item1, 2);
-        OrderItem orderItem2 = new OrderItem(item3, 3);
-        orderItems.add(orderItem1);
-        orderItems.add(orderItem2); 
-        orderService.placeOrder(cust1, orderItems);
+        int choice = sc.nextInt();
+        sc.nextLine();
 
-        Order orderRes = orderService.getOrderById(1);
-        if(orderRes != null){
-            System.out.println("Customer Name: "+orderRes.getCustomerName());
-            System.out.println("Total items orders: "+orderRes.getOrderItems().size());
-        }
-        else{
-            System.out.println("Order not found");
-        }
+        switch (choice) {
+            case 1:
+                System.out.print("Enter item name: ");
+                String name = sc.nextLine();
+                System.out.print("Enter price: ");
+                double price = sc.nextDouble();
+                System.out.print("Enter quantity: ");
+                int quantity = sc.nextInt();
+                System.out.print("Enter reorder level: ");
+                int reorder = sc.nextInt();
+                orderService.addItem(new Item(name, price, quantity, reorder));
+                System.out.println("Item added");
+                break;
 
-        System.out.println("Highest order transaction: "+orderService.getHighestOrderTransaction());
-        System.out.println("Lowest order transaction: "+orderService.getLowestOrderTransaction());
-        List<Order> orders = orderService.getOrdersFromLastWeek();
-        if(orders.size() > 0){
-            for(Order order : orders){
-                System.out.println("Order Id: "+order.getOrderId());
-            }
+            case 2:
+                System.out.print("Enter customer name: ");
+                String cname = sc.nextLine();
+                System.out.print("Enter address: ");
+                String address = sc.nextLine();
+                System.out.print("Enter phone: ");
+                String phone = sc.nextLine();
+                System.out.print("Enter email: ");
+                String email = sc.nextLine();
+                orderService.addCustomer(new Customer(cname, address, phone, email));
+                System.out.println("Customer added");
+                break;
+
+            case 3:
+                System.out.print("Enter item name: ");
+                String searchName = sc.nextLine();
+                Item item = orderService.getItemByname(searchName);
+                if (item != null)
+                    System.out.println("Found: " + item.getName());
+                else
+                    System.out.println("Item not found");
+                break;
+
+            case 4:
+                System.out.print("Enter price: ");
+                double p = sc.nextDouble();
+                List<Item> items = orderService.getItemsByPrice(p);
+                if (items.size() > 0) {
+                    for (Item i : items)
+                        System.out.println(i.getName());
+                } else {
+                    System.out.println("No items found");
+                }
+                break;
+
+            case 5:
+                System.out.print("Enter customer name: ");
+                String custName = sc.nextLine();
+                Customer foundCustomer = orderService.findCustomerByName(custName);
+                if (foundCustomer == null) {
+                    System.out.println("Customer not found (use same object reference in real case)");
+                    break;
+                }
+
+                List<OrderItem> orderItems = new ArrayList<>();
+                System.out.print("Enter number of items: ");
+                int n = sc.nextInt();
+                sc.nextLine();
+
+                for (int i = 0; i < n; i++) {
+                    System.out.print("Enter item name: ");
+                    String iname = sc.nextLine();
+                    Item it = orderService.getItemByname(iname);
+                    if (it == null) {
+                        System.out.println("Item not found");
+                        i--;
+                        continue;
+                    }
+                    System.out.print("Enter quantity: ");
+                    int q = sc.nextInt();
+                    sc.nextLine();
+                    orderItems.add(new OrderItem(it, q));
+                }
+
+                orderService.placeOrder(foundCustomer, orderItems);
+                break;
+
+            case 6:
+                System.out.print("Enter order id: ");
+                int id = sc.nextInt();
+                Order order = orderService.getOrderById(id);
+                if (order != null) {
+                    System.out.println("Customer: " + order.getCustomerName());
+                    System.out.println("Total Items: " + order.getOrderItems().size());
+                } else {
+                    System.out.println("Order not found");
+                }
+                break;
+
+            case 7:
+                System.out.print("Enter customer name: ");
+                String cnameSearch = sc.nextLine();
+                List<Order> orders = orderService.getOrdersByCustomer(cnameSearch);
+                for (Order o : orders) {
+                    System.out.println("Order ID: " + o.getOrderId());
+                }
+                break;
+
+            case 8:
+                System.out.println("Highest Transaction: " + orderService.getHighestOrderTransaction());
+                break;
+
+            case 9:
+                System.out.println("Lowest Transaction: " + orderService.getLowestOrderTransaction());
+                break;
+
+            case 10:
+                List<Order> lastWeek = orderService.getOrdersFromLastWeek();
+                for (Order o : lastWeek) {
+                    System.out.println("Order ID: " + o.getOrderId());
+                }
+                break;
+
+            case 0:
+                System.out.println("Exiting...");
+                return;
+
+            default:
+                System.out.println("Invalid choice");
         }
-        else{
-            System.out.println("No orders found"); 
-        } 
     }
+}
 }
 class OrderService{
     private List<Order> orders = new ArrayList<>();
     private List<Customer> customers = new ArrayList<>();
     private List<Item> items = new ArrayList<>();
 
+    public Customer findCustomerByName(String name){
+        for(Customer customer : customers){
+            if(customer.getName().equalsIgnoreCase(name)){
+                return customer;
+            }
+        }
+        return null;
+    }
     public void addItem(Item item){
         items.add(item);
     }
